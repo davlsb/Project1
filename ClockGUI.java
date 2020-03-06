@@ -36,17 +36,17 @@ public class ClockGUI extends JFrame {
 
         myGUI.getContentPane().add(text);
         text.setEditable(false);
-        text.setText("Unsorted: "+"\n");
-        for(int i=0; i<size; i++)
-            text.append(cArr1[i] + "\n");          
+        text.setText("Unsorted: "+"\n");        
 
 
         myGUI.getContentPane().add(textArea2);
         textArea2.setEditable(false);
-        
         textArea2.setText("Sorted: "+"\n");
-        for(int i=0; i<size; i++)
-            textArea2.append(cArr2[i] + "\n");         
+            
+        for(int i=0; i<size; i++){
+            text.append(cArr1[i] + "\n");  
+            textArea2.append(cArr2[i] + "\n"); 
+        }
         }
         
 }
